@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#ddeaf6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img_view_one"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:text="Pemain 1"
+            android:textColor="#2196F3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_judul_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Comp"
+            android:textColor="#2196F3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900px"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="900dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/but_batu"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:padding="0dp"
+                android:src="@drawable/ic_batu_but" />
+
+            <ImageButton
+                android:id="@+id/but_kertas"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:padding="0dp"
+                android:src="@drawable/ic_kertas_but" />
+
+            <ImageButton
+                android:id="@+id/but_gunting"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:padding="0dp"
+                android:src="@drawable/ic_gunting_but" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="900dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/text_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="#ddeaf6"
+                android:gravity="center_horizontal"
+                android:src="@drawable/img_versus"
+                android:textColor="#F30909"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="900dp"
+            android:layout_marginLeft="300dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/but_batu_com"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:padding="0dp"
+                android:src="@drawable/ic_batu_but" />
+
+            <ImageButton
+                android:id="@+id/but_kertas_com"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:padding="0dp"
+                android:src="@drawable/ic_kertas_but" />
+
+            <ImageButton
+                android:id="@+id/but_gunting_com"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:padding="0dp"
+                android:src="@drawable/ic_gunting_but" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/but_reset"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@drawable/ic_refresh" />
+    </LinearLayout>
+
+</LinearLayout>
